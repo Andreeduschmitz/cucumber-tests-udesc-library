@@ -50,7 +50,7 @@ public class StepsDefs {
         assertEquals((long) this.booksPerGenre.get(genero), quantidade);
     }
 
-    @Mas("eu nao encontro nenhum outro genero")
+    @E("eu nao encontro nenhum outro genero")
     public void euNaoEncontroNenhumOutroGenero() {
         for (Genre genero : this.booksPerGenre.keySet()) {
             if (!genero.equals(Genre.ROMANCE) && !genero.equals(Genre.DRAMA) && !genero.equals(Genre.FICTION)) {
